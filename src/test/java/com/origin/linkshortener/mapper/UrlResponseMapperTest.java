@@ -17,7 +17,7 @@ public class UrlResponseMapperTest {
     @BeforeEach
     void setUp() {
         mapper = new UrlResponseMapper();
-        ReflectionTestUtils.setField(mapper, "baseUrl", "http://orig.in/");
+        ReflectionTestUtils.setField(mapper, "baseUrl", "https://orig.in/");
     }
 
     @Test
@@ -31,7 +31,7 @@ public class UrlResponseMapperTest {
         Map<String, Object> response = mapper.toResponse(shortenedUrl);
 
         assertEquals("https://example.com", response.get("originalUrl"));
-        assertEquals("http://orig.in/abc123", response.get("shortUrl"));
+        assertEquals("https://orig.in/abc123", response.get("shortUrl"));
         assertEquals("abc123", response.get("urlCode"));
     }
 }
