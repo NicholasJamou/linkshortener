@@ -1,6 +1,5 @@
-package com.origin.linkshortener;
+package com.origin.linkshortener.utils;
 
-import com.origin.linkshortener.utils.GenerateUniqueUrlCode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
